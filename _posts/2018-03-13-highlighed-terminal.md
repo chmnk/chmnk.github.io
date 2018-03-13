@@ -7,17 +7,17 @@ For some reasons, the terminals on my Ubuntu computers sometimes loose their nic
 Here is the correct .bashrc :
 
 for prompt either just uncomment this if the prompt highlight settings are already in the .bashrc file 
-```
+```bash
 force_color_prompt=yes
 ```
 or 
-``` 
+```bash 
 color_prompt=yes
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 fi
 ``` 
 for ls
-```
+```bash
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
