@@ -1,3 +1,4 @@
 theme: jekyll-theme-minimal
 title: Welcome to the @chmnk home page!
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
